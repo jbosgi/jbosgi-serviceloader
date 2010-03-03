@@ -29,16 +29,15 @@ import java.io.InputStreamReader;
 import java.util.Enumeration;
 import java.util.Hashtable;
 
+import org.jboss.logging.Logger;
 import org.jboss.osgi.deployment.interceptor.AbstractLifecycleInterceptor;
 import org.jboss.osgi.deployment.interceptor.InvocationContext;
-import org.jboss.virtual.VirtualFile;
+import org.jboss.osgi.vfs.VirtualFile;
 import org.osgi.framework.Bundle;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.Constants;
 import org.osgi.framework.ServiceFactory;
 import org.osgi.framework.ServiceRegistration;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * An interceptor that registeres service defined in META-INF/services.
@@ -49,7 +48,7 @@ import org.slf4j.LoggerFactory;
 public class ServiceLoaderInterceptor extends AbstractLifecycleInterceptor
 {
    // Provide logging
-   private Logger log = LoggerFactory.getLogger(ServiceLoaderInterceptor.class);
+   private static final Logger log = Logger.getLogger(ServiceLoaderInterceptor.class);
 
    @SuppressWarnings("unchecked")
    public void invoke(int state, InvocationContext context)
