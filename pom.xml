@@ -14,11 +14,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   
-  <name>JBossOSGi Bundles - Service Loader</name>
+  <name>JBossOSGi Service Loader</name>
   <description>The JBossOSGi META-INF/services Loader</description>
   
-  <groupId>org.jboss.osgi.bundles</groupId>
-  <artifactId>jboss-osgi-serviceloader</artifactId>
+  <groupId>org.jboss.osgi.serviceloader</groupId>
+  <artifactId>jbosgi-serviceloader</artifactId>
   <packaging>bundle</packaging>
   
   <version>1.0.2-SNAPSHOT</version>
@@ -27,20 +27,20 @@
   <parent>
     <groupId>org.jboss.osgi</groupId>
     <artifactId>jboss-osgi-parent</artifactId>
-    <version>1.0.5</version>
+    <version>1.0.7</version>
   </parent>
   
-  <!-- Subversion -->
+  <!-- Source -->
   <scm>
-    <connection>scm:svn:http://anonsvn.jboss.org/repos/jbossas/projects/jboss-osgi/projects/bundles/serviceloader/trunk</connection>
-    <developerConnection>scm:svn:https://svn.jboss.org/repos/jbossas/projects/jboss-osgi/projects/bundles/serviceloader/trunk</developerConnection>
-    <url>http://fisheye.jboss.com/qsearch/JBossOSGi</url>
+    <connection>scm:git:git://github.com/jbosgi/jbosgi-serviceloader.git</connection>
+    <developerConnection>scm:git:git@github.com:jbosgi/jbosgi-serviceloader.git</developerConnection>
+    <url>http://github.com/jbosgi/jbosgi-serviceloader</url>
   </scm>
   
   <!-- Properties -->  
   <properties>
-    <version.jboss.osgi.deployment>1.0.2</version.jboss.osgi.deployment>
-    <version.jboss.osgi.spi>1.0.5</version.jboss.osgi.spi>
+    <version.jboss.osgi.deployment>1.0.3</version.jboss.osgi.deployment>
+    <version.jboss.osgi.spi>1.0.10</version.jboss.osgi.spi>
     <version.osgi>4.2.0</version.osgi>
   </properties>
   
